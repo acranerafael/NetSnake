@@ -17,34 +17,7 @@
 
     <main class="container py-4">
       <div class="row g-4">
-        <div class="col-12">
-          <div class="p-4 bg-light border rounded-3">
-            <h1 class="h3 mb-3">Bem-vindo ao NetSnake Challenge</h1>
-            <p class="mb-2">Controle a cobrinha com as setas. Cada movimento faz uma requisição ao servidor; o movimento só ocorre após a resposta, refletindo a latência real. Em modos com jitter/perda, o jogo reage com obstáculos e efeitos.</p>
-            <div class="row gy-2 align-items-end">
-              <div class="col-md-3">
-                <label class="form-label">Seu nome</label>
-                <input id="playerName" class="form-control" placeholder="Jogador" />
-              </div>
-              <div class="col-md-3">
-                <label class="form-label">Modo de Jogo</label>
-                <select id="modeSelect" class="form-select">
-                  <option value="ping">Modo Ping (baixa variação)</option>
-                  <option value="jitter">Modo Jitter (variação alta)</option>
-                  <option value="solo">Modo Solo (offline)</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <button id="startBtn" class="btn btn-primary w-100">Iniciar Partida</button>
-              </div>
-              <div class="col-md-3">
-                <button id="tutorialBtn" class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#tutorialModal">Tutorial</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
+        <div class="col-12 col-lg-7">
           <div class="card shadow-sm">
             <div class="card-header d-flex justify-content-between align-items-center">
               <span>Área de Jogo</span>
@@ -67,9 +40,34 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-5">
+        <div class="col-12 col-lg-5">
           <div class="row g-3">
+            <div class="col-12">
+              <div class="p-4 bg-light border rounded-3">
+                <h1 class="h3 mb-3">Bem-vindo ao NetSnake Challenge</h1>
+                <p class="mb-2">Controle a cobrinha com as setas. Cada movimento faz uma requisição ao servidor; o movimento só ocorre após a resposta, refletindo a latência real. Em modos com jitter/perda, o jogo reage com obstáculos e efeitos.</p>
+                <div class="row gy-2 align-items-end">
+                  <div class="col-md-6">
+                    <label class="form-label">Seu nome</label>
+                    <input id="playerName" class="form-control" placeholder="Jogador" />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Modo de Jogo</label>
+                    <select id="modeSelect" class="form-select">
+                      <option value="ping">Modo Ping</option>
+                      <option value="jitter">Modo Jitter</option>
+                      <option value="solo">Modo Offline</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <button id="startBtn" class="btn btn-primary w-100">Iniciar Partida</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button id="tutorialBtn" class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#tutorialModal">Tutorial</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-12">
               <div class="card h-100 shadow-sm">
                 <div class="card-body">
